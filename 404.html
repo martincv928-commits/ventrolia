@@ -1,1 +1,7 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Página no encontrada · Ventrolia</title><style>body{margin:0;background:#061219;color:#f1f8f8;font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;text-align:center}a{color:#38d6c8;font-weight:700}</style></head><body><div><h1>Esta página no existe</h1><p><a href="/">Ir al inicio de Ventrolia</a> · <a href="/web/blog/">Ver las guías</a></p></div></body></html>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Ventrolia</title><style>body{margin:0;background:#061219;color:#f1f8f8;font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;text-align:center}a{color:#38d6c8;font-weight:700}#nf{display:none}</style></head><body><div id="ab">Abriendo…</div><div id="nf"><h1>Esta página no existe</h1><p><a href="/">Ir al inicio de Ventrolia</a> · <a href="/web/blog/">Ver las guías</a></p></div>
+<script>(function(){
+// Links propios: /tienda/CODIGO y /sitio/CODIGO abren la página real con ?e=CODIGO
+var m=location.pathname.match(/^\/(tienda|sitio)\/([A-Za-z0-9_-]+)\/?$/);
+if(m){var q=location.search?'&'+location.search.slice(1):'';location.replace('/'+m[1]+'.html?e='+encodeURIComponent(m[2])+q+location.hash);return}
+document.getElementById('ab').style.display='none';document.getElementById('nf').style.display='block';
+})();</script></body></html>
